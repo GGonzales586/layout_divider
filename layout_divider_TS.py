@@ -23,8 +23,8 @@ def equal_empty_space():
         fixture_length = convert_to_float(input('How long are the fixtures? (Fractional inches)\n'))
         total_fixture_length = fixture_count * fixture_length
         space_length = convert_to_float(input('How long is the space? (Fractional inches)\n'))
-        layout_oc = (space_length - total_fixture_length) / (fixture_count + 1)
-        print('The distance between fixture to fixture and the walls O.C. is...\n' + str(layout_oc))
+        empty_space = (space_length - total_fixture_length) / (fixture_count + 1)
+        print('The empty space between fixture to fixture and the walls is...\n' + str(empty_space))
         input('Hit enter to continue.\n')
         break
 
